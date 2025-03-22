@@ -128,7 +128,7 @@ void ConfigureSPI(void) {
     spiConfig.sselPol = kSPI_SpolActiveAllLow;
 
     // Initialize Flexcomm 8 SPI
-    SPI_MasterInit(SPI8, &spiConfig, CLOCK_GetFlexcommClkFreq(SPI_INSTANCE));
+//    SPI_MasterInit(SPI8, &spiConfig, CLOCK_GetFlexcommClkFreq(SPI_INSTANCE));
 
     // Create a handle for SPI transfers
     SPI_MasterTransferCreateHandle(SPI8, &spiHandle, SPI_Callback, NULL);
